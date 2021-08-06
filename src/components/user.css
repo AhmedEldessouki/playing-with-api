@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 150px;
+  weight: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #1e1d1d;
+  box-shadow: -1rem 0 3rem #000;
+  color: white;
+  transition: 0.2s;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.author-avatar img {
+  display: block;
+  position: relative;
+  left: 27.5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: cover;
+  margin: 16px 10px;
+}
+
+.half-circle {
+  position: relative;
+  bottom: -12px;
+  left: -27.5px;
+  width: 50px;
+  height: 40px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
