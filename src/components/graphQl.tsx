@@ -45,11 +45,9 @@ type StateType = {
 type ActionType =
   | {
       type: 'load_next_items'
-      // payload: {index: number}
     }
   | {
       type: 'load_prev_items'
-      // payload: {index: number}
     }
   | {
       type: 'set_display_data'
@@ -186,7 +184,7 @@ function GraphQl() {
 
   return (
     <div>
-      <span>asdasdasddd</span>
+      <span>GraphQl</span>
       <span>{loading && 'loading...'}</span>
       <div style={{}}>
         <div
@@ -231,19 +229,8 @@ function GraphQl() {
               </React.Fragment>
             )
           })}
-          {/* {state.countries?.map((item, i) => {
-            if (state.min <= i && i >= state.max)
-              return (
-                <React.Fragment key={item.name}>
-                  <span>{item.name}</span>
-                  <br />
-                </React.Fragment>
-              )
-            return <span key={item.name}>loading</span>
-          })} */}
         </div>
       </div>
-      <p>{JSON.stringify(countries)}</p>
       <p>{JSON.stringify(error)}</p>
     </div>
   )
