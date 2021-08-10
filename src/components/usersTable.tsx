@@ -244,7 +244,6 @@ function UsersTable() {
             aria-label="page-number"
             name="page-number"
             type="number"
-            defaultValue={0}
             value={numberInput}
             onChange={e => {
               setNumberInput(e.target.valueAsNumber)
